@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge - Encriptador de texto</title>
+        <link rel="shortcut icon" href="imagenes/icono.png">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <img class="header__logo" src="imagenes/logo-alura.png" alt="Logo de Alura">
+        </header>
+
+        <main class="presentacion">
+            <section class="presentacion__entrada">
+                <textarea class="presentacion__entrada__texto" cols="40" rows="10" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                <div>
+                    <h6 class= "presentacion__restriccion">&#9888 Solo letras minúsculas y sin acentos.</h6>
+                </div>
+                <div class="presentacion__botones">
+                    <button name="presentacion__botones__encriptar" class="presentacion__botones__encriptar" onclick="encriptar()">Encriptar</button>
+                    <button name="presentacion__botones__desencriptar" class="presentacion__botones__desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section class="presentacion__salida">
+                <textarea class="presentacion__salida__texto" cols="22" rows="12" disabled></textarea>
+                <div class="presentacion__salida__cuadro">
+                    <h2 class="texto1">Ningún mensaje fue encontrado</h2>
+                    <h3 class="texto2">Ingresa el texto que desees encriptar o desencriptar.</h3>
+                    <button name="copiar" class="copiar" onclick="copiar()" style="display: none;"><span class="presentacion__cuadro__mensaje_copiado"></span>Copiar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="letra"> Desarrollado por Anaid Muñoz</p>
+        </footer>
+
+    </body>
+
+    <script src="script.js"></script>
+
+</html>
